@@ -1,0 +1,49 @@
+{
+  "manifest_version": "0.3",
+  "name": "calendar366",
+  "display_name": "Calendar 366",
+  "version": "1.0.0",
+  "description": "Manage calendars, events and tasks in Calendar 366 through Claude.",
+  "long_description": "Lets Claude read and manage your events and tasks in Calendar 366. Ask Claude to show your agenda, create or move items, duplicate entries, or mark tasks as done — directly from chat. Requires the Calendar 366 app to be installed and running.",
+  "author": {
+    "name": "Vincent Miethe",
+    "email": "vincent@calendar366.com",
+    "url": "https://calendar366.com"
+  },
+  "homepage": "https://calendar366.com",
+  "documentation": "https://calendar366.com/help/index.html#ext-claude",
+  "support": "https://calendar366.com/support/",
+  "icon": "assets/icon.png",
+  "keywords": [
+    "calendar",
+    "events",
+    "tasks",
+    "reminders",
+    "productivity",
+    "scheduling",
+    "agenda",
+    "macos",
+    "calendar366"
+  ],
+  "server": {
+    "type": "binary",
+    "entry_point": "dist/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge",
+    "mcp_config": {
+      "command": "${__dirname}/dist/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge"
+    }
+  },
+  "tools": [
+    { "name": "get_current_time", "description": "Get the user's current local date, time and timezone." },
+    { "name": "list_calendars", "description": "List all calendars and task lists grouped by account." },
+    { "name": "list_items", "description": "List events and tasks in a date range." },
+    { "name": "get_item", "description": "Get full details of a single event or task." },
+    { "name": "create_item", "description": "Create a new event or task." },
+    { "name": "update_item", "description": "Update an existing event or task." },
+    { "name": "delete_item", "description": "Delete an event or task (requires user confirmation)." },
+    { "name": "duplicate_item", "description": "Duplicate an existing event or task." }
+  ],
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["darwin"]
+  }
+}
