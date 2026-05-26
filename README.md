@@ -21,7 +21,7 @@ A Claude Desktop extension that enables Claude to read and manage events and tas
 
 * macOS
 * Claude Desktop `>= 0.10.0`
-* Calendar 366 installed on the same Mac
+* Calendar 366 v3.0.6 installed on the same Mac
 
 ## Data Handling
 
