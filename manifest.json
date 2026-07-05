@@ -2,9 +2,9 @@
   "manifest_version": "0.3",
   "name": "calendar366",
   "display_name": "Calendar 366",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage calendars, events and tasks in Calendar 366 through Claude.",
-  "long_description": "Lets Claude read and manage your events and tasks in Calendar 366. Ask Claude to show your agenda, create or move items, duplicate entries, or mark tasks as done — directly from chat. Requires the Calendar 366 app to be installed and running.",
+  "long_description": "Lets Claude read and manage your events and tasks in Calendar 366. Ask Claude to show your agenda, create or move items, duplicate entries, or mark tasks as done — directly from chat. Requires Calendar 366 3.0.6 or newer, installed and running on the same Mac.",
   "author": {
     "name": "Vincent Miethe",
     "email": "vincent@calendar366.com",
@@ -27,9 +27,9 @@
   ],
   "server": {
     "type": "binary",
-    "entry_point": "dist/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge",
+    "entry_point": "/Applications/Calendar 366.app/Contents/Helpers/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge",
     "mcp_config": {
-      "command": "${__dirname}/dist/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge"
+      "command": "/Applications/Calendar 366.app/Contents/Helpers/Calendar 366 MCP Bridge.app/Contents/MacOS/Calendar 366 MCP Bridge"
     }
   },
   "tools": [
