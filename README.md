@@ -25,7 +25,7 @@ A Claude Desktop extension that enables Claude to read and manage events and tas
 
 ## Data Handling
 
-The extension communicates with Calendar 366 entirely on-device. Calendar data is never transmitted to a server operated by us.
+The extension communicates with Calendar 366 entirely on-device. Calendar data never leaves your Mac.
 
 ## About This Repository
 
